@@ -4,13 +4,9 @@
     box-sizing: border-box;
 }
 
-:root {
-    --font: font-family: 'Rubik', sans-serif;
-}
-
 body {
     background-color: #847ECE;
-    font-family: var(--font);
+    font-family: 'Rubik', sans-serif;
 
     display: flex;
     align-items: center;
@@ -81,14 +77,13 @@ body {
     color: #EBEBEB;
 }
 
+/* div teclado */
 #teclado {
     position: absolute;
     width: 292px;
     height: 368px;
     left: 540px;
     top: 200px;
-
-    border: 1px solid red;
 }
 
 /* botoes da calculadora */
@@ -107,12 +102,9 @@ button {
     cursor: pointer;
 }
 
-/* estilizando os numeros */
-.number {
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+/* estilizando os numeros e os operadores */
+.number,
+.operator {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -121,7 +113,16 @@ button {
     align-items: center;
     text-align: center;
 
+}
+
+/* estilizando os numeros */
+.number {
     background-color: #2D2A37;
     color: #EBEBEB;
+}
 
+/* estilizando os operadores */
+.operator {
+    background-color: #2D2A37;
+    color: #7F45E2;
 }
