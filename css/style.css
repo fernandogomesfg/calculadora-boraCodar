@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font: font-family: 'Rubik', sans-serif;
+}
+
 body {
     background-color: #847ECE;
+    font-family: var(--font);
 
     display: flex;
     align-items: center;
@@ -42,48 +47,35 @@ body {
     top: calc(50% - 86px/2 - 186px);
 }
 
-/* input do calculo */
-.input-calculo {
+/* propriedades iguais da seccao de calculo e resultado */
+.input-calculo,
+.input-resultado {
     width: 248px;
-    height: 28px;
-
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 140%;
 
     display: flex;
     align-items: center;
     text-align: right;
-    letter-spacing: -0.02em;
 
-    color: #6B6B6B;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
     background-color: transparent;
     border: none;
 }
 
+/* input do calculo */
+.input-calculo {    
+    height: 28px;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #6B6B6B;
+}
+
 .input-resultado {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: right;
     padding: 0px;
-
-    width: 248px;
     height: 50px;
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
     font-size: 36px;
-    line-height: 140%;
-
-    background-color: transparent;
-    border: none;
+    color: #EBEBEB;
 }
